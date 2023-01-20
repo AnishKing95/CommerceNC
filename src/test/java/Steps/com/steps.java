@@ -1,4 +1,4 @@
-package org.step.org;
+package Steps.com;
 
 public class steps {
 
