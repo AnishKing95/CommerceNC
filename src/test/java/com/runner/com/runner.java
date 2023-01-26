@@ -20,7 +20,8 @@ import io.cucumber.junit.CucumberOptions;
                  glue = { "Steps.com" },
                  plugin = { 
                 		 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-                 monochrome = true
+                 monochrome = true,
+                 publish=true
 		
 
 )
