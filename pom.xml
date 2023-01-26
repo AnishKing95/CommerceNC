@@ -70,6 +70,12 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+<dependency>
+   <groupId>tech.grasshopper</groupId>
+   <artifactId>extentreports-cucumber7-adapter</artifactId>
+   <version>1.9.2</version>
+   <scope>test</scope>
+</dependency>
   </dependencies>
 
   <build>
@@ -114,6 +120,7 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        
          <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>

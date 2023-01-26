@@ -6,12 +6,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import PageObjects.HomePage;
 import congifuration.FileConfig;
+import congifuration.Initialization;
 import io.cucumber.java.en.*;
 
 
-public class HomePageSteps {
+public class HomePageSteps extends Initialization{
 	
-	WebDriver driver;
 	
 	HomePage homePage;
 	
@@ -21,8 +21,8 @@ public class HomePageSteps {
 	   
 		if(FileConfig.property.getProperty("Browser").equals("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "E:\\Mainproject 9.30\\CommorceNC\\Driver\\chromedriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver.exe");
+//			driver = new ChromeDriver();
 		}
 		
 		driver.get(FileConfig.property.getProperty("appUrl"));
