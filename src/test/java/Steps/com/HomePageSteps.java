@@ -4,19 +4,17 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import Initialization.Initialization;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.HomePage;
 import congifuration.FileConfig;
-import congifuration.Initialization;
 import io.cucumber.java.en.*;
 
 
 public class HomePageSteps extends Initialization{
 	
 	
-	HomePage homePage;
 	
-	DigitalDownloadsPage digitalPage;
 	@Given("user can able enter into home page")
 	public void user_can_able_enter_into_home_page() {
 	   
@@ -35,57 +33,60 @@ public class HomePageSteps extends Initialization{
 	@Given("user can login with valid credentials")
 	public void user_can_login_with_valid_credentials() {
 	  
-		homePage=PageFactory.initElements(driver, HomePage.class);
 		
-		WebElement register = homePage.getRegister();
+		WebElement register = allObj.getHomePage().getRegister();
 		register.click();
 		
-		WebElement gender = homePage.getGender();
+		
+		
+		
+		WebElement gender = allObj.getHomePage().getGender();
 		gender.click();
 		
-		WebElement getfName = homePage.getfName();
+		WebElement getfName = allObj.getHomePage().getfName();
 		getfName.sendKeys("Anish");
 		
-		WebElement getlName = homePage.getlName();
+		WebElement getlName = allObj.getHomePage().getlName();
 		getlName.sendKeys("Raja");
 		
-		WebElement day = homePage.getDay();
+		WebElement day = allObj.getHomePage().getDay();
 		
-		WebElement month = homePage.getMonth();
+		WebElement month = allObj.getHomePage().getMonth();
 		
-		WebElement year = homePage.getYear();
+		WebElement year = allObj.getHomePage().getYear();
 		
-		WebElement email = homePage.getEmail();
+		WebElement email = allObj.getHomePage().getEmail();
 		email.sendKeys(FileConfig.property.getProperty("username"));
 		
-		WebElement company = homePage.getCompany();
+		WebElement company = allObj.getHomePage().getCompany();
 		company.sendKeys("SkillPits");
 		
-		WebElement password = homePage.getPassword();
+		WebElement password = allObj.getHomePage().getPassword();
 		password.sendKeys(FileConfig.property.getProperty("password"));
 		
-		WebElement cPassword = homePage.getcPassword();
+		WebElement cPassword = allObj.getHomePage().getcPassword();
 		cPassword.sendKeys(FileConfig.property.getProperty("password"));
 		
-		WebElement regBotton = homePage.getRegBotton();
+		WebElement regBotton = allObj.getHomePage().getRegBotton();
 		regBotton.click();
 		
-		WebElement login = homePage.getLogIn();
+		WebElement login = allObj.getHomePage().getLogIn();
 		login.click();
 		
-		WebElement userName = homePage.getUserName();
+		WebElement userName = allObj.getHomePage().getUserName();
 		userName.sendKeys(FileConfig.property.getProperty("username"));
 		
-		WebElement passWord = homePage.getPassWord();
+		WebElement passWord = allObj.getHomePage().getPassWord();
 		passWord.sendKeys(FileConfig.property.getProperty("password"));
 		
-		WebElement loginBtn = homePage.getLoginBtn();
+		WebElement loginBtn = allObj.getHomePage().getLoginBtn();
 		loginBtn.click();
 		
 		
 	
 		
 	}
+
 	
 
 	

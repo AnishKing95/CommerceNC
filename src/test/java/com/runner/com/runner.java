@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import Initialization.Initialization;
 import congifuration.FileConfig;
-import congifuration.Initialization;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.BeforeStep;
@@ -32,6 +32,7 @@ public class runner extends Initialization {
 	public static void setup() {
 
 		FileConfig.fileReader();
+		Initialization.getAllObjects();
 		
 
 	}
