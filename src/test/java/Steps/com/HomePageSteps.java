@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import PageObjects.DigitalDownloadsPage;
 import PageObjects.HomePage;
 import congifuration.FileConfig;
 import io.cucumber.java.en.*;
@@ -15,7 +16,7 @@ public class HomePageSteps {
 	
 	HomePage homePage;
 	
-	
+	DigitalDownloadsPage digitalPage;
 	@Given("user can able enter into home page")
 	public void user_can_able_enter_into_home_page() {
 	   
@@ -85,6 +86,7 @@ public class HomePageSteps {
 	
 		
 	}
+	
 
 	
 	
