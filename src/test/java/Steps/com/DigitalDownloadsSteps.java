@@ -12,8 +12,6 @@ import io.cucumber.java.en.When;
 
 public class DigitalDownloadsSteps extends Initialization {
 
-	DigitalDownloadsPage digitalPage;
-	WebDriver driver;
 
 	@When("user navigates digital downloads and click add to cart")
 	public void user_navigates_digital_downloads_and_click_add_to_cart() {

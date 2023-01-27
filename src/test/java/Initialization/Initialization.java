@@ -45,6 +45,8 @@ public class Initialization {
 	}
 	
 	
+	
+	
 	public static void getAllObjects() {
 		
 		allObj = new Initialization();
