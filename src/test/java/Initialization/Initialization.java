@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import PageObjects.ApparelPage;
 import PageObjects.BookReviewPage;
 import PageObjects.DigitalDownloadsPage;
+import PageObjects.EmailPage;
 import PageObjects.HomePage;
 
 
@@ -18,7 +19,9 @@ public class Initialization {
 	private static ApparelPage apparelPage;
 	private static HomePage homePage;
 	private static DigitalDownloadsPage digitalPage;
+	private static EmailPage emailPage;
 	private static BookReviewPage bookReviewPage;
+
 	public static Initialization allObj;
     
 
@@ -46,6 +49,12 @@ public class Initialization {
 
 	}
 	
+
+	public  EmailPage getEmailPage() {
+		emailPage=PageFactory.initElements(driver, EmailPage.class);
+		return emailPage;
+	}
+
 	
 public BookReviewPage getBookReviewPage() {
 		
@@ -54,7 +63,7 @@ public BookReviewPage getBookReviewPage() {
 
 	}
 	
-	
+
 	
 	public static void getAllObjects() {
 		
@@ -62,6 +71,9 @@ public BookReviewPage getBookReviewPage() {
 		
 
 	}
+
+
+	
 	
 	
 	
