@@ -40,7 +40,11 @@ public class EmailSteps extends Initialization {
 
 
 	@Then("verify the email has been sent")
-	public void verify_the_email_has_been_sent() {
+	public void verify_the_email_has_been_sent() throws InterruptedException {
+		Thread.sleep(3000);
+		allObj.getEmailPage().getVerify().isDisplayed();
+		
+		
 		
 		
 	

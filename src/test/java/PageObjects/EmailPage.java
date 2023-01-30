@@ -35,9 +35,21 @@ public class EmailPage {
 	@FindBy(xpath="(//button[text()='Send email'])[1]")
 	private WebElement sendEmail;
 
+	
+	@FindBy(xpath="//div[@class='result']")
+	private WebElement verify;
+	
 	public WebElement getElectronics() {
 		return electronics;
 	}
+
+
+	public WebElement getVerify() {
+		return verify;
+	}
+
+
+
 
 
 	public void setElectronics(WebElement electronics) {
@@ -113,6 +125,8 @@ public class EmailPage {
 	public void setPersonalMessage(WebElement personalMessage) {
 		this.personalMessage = personalMessage;
 	}
+
+
 }
 
 
