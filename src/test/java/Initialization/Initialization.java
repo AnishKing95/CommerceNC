@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import PageObjects.ApparelPage;
+import PageObjects.BookReviewPage;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.HomePage;
 
@@ -17,6 +18,7 @@ public class Initialization {
 	private static ApparelPage apparelPage;
 	private static HomePage homePage;
 	private static DigitalDownloadsPage digitalPage;
+	private static BookReviewPage bookReviewPage;
 	public static Initialization allObj;
     
 
@@ -44,6 +46,13 @@ public class Initialization {
 
 	}
 	
+	
+public BookReviewPage getBookReviewPage() {
+		
+		bookReviewPage=PageFactory.initElements(driver, BookReviewPage.class);
+		return bookReviewPage;
+
+	}
 	
 	
 	
