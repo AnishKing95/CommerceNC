@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 27, 2023 12:23:41 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jan 30, 2023 12:41:07 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -84,9 +79,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">feature file</p>
+            <p class="name">verify the email</p>
             <p class="text-sm">
-              <span>12:24:05 pm</span> / <span>00:00:06:331</span>
+              <span>12:41:20 pm</span> / <span>00:00:21:947</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -94,10 +89,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">feature file</h5>
-<span class='badge badge-success'>01.27.2023 12:24:05 pm</span>
-<span class='badge badge-danger'>01.27.2023 12:24:11 pm</span>
-<span class='badge badge-default'>00:00:06:331</span>
+<h5 class="test-status text-fail">verify the email</h5>
+<span class='badge badge-success'>01.30.2023 12:41:20 pm</span>
+<span class='badge badge-danger'>01.30.2023 12:41:42 pm</span>
+<span class='badge badge-default'>00:00:21:947</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -109,7 +104,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>verify size drop down is visible for any product selected</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>verify email is sent in add cart screen for any product</div>
       </div>
     </div>
         <div class="">
@@ -119,51 +114,29 @@
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="Steps.com.HomePageSteps.user_can_login_with_valid_credentials()">
+              <div class="step pass-bg" title="Steps.com.HomePageSteps.user_can_login_with_valid_credentials()">
                 <span>And user can login with valid credentials</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.119)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8526134503ec299795b68541d47d1eba, findElement {using=id, value=Password}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\NEW\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55569}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55569/devtoo..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8526134503ec299795b68541d47d1eba
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
-	at Steps.com.HomePageSteps.user_can_login_with_valid_credentials(HomePageSteps.java:65)
-	at ✽.user can login with valid credentials(file:///C:/Users/NEW/eclipse-workspace/project/projectNew/New%20folder/CommerceNC/Features/sample.feature:6)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="Steps.com.ApparelSteps.user_navigate_the_apparel_and_click_the_shoes()">
-                <span>When user navigate the apparel and click the shoes</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="Steps.com.EmailSteps.user_navigate_the_electronis_and_click_the_camera_and_photo()">
+                <span>When user navigate the electronis and click the camera and photo</span>
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Steps.com.ApparelSteps.check_the_visibility_of_size_drop_down()">
-                <span>Then check the visibility of size drop down</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="Steps.com.EmailSteps.user_click_the_add_cart()">
+                <span>And user click the add cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.com.EmailSteps.user_click_the_email_a_friend_and_enter_the_both_mail_id_and_optional_message()">
+                <span>Then user click the email a friend and enter the both mail id  and optional message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>And verify the email has been sent</span>
+      <div>Step undefined
       </div>
               </div>
           </div>
@@ -181,70 +154,18 @@ Session ID: 8526134503ec299795b68541d47d1eba
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchWindowException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchWindowException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:24:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='4'>And user can login with valid credentials</a>
-<div class="">
-<span class="badge badge-default">feature file.verify size drop down is visible for any product selected.And user can login with valid credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 27, 2023 12:23:41 pm</h3>
+<h3>Jan 30, 2023 12:41:07 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 27, 2023 12:24:11 pm</h3>
+<h3>Jan 30, 2023 12:41:42 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -315,10 +236,10 @@ Session ID: 8526134503ec299795b68541d47d1eba
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='25%'><b>1</b> steps passed</small></div>
+<div><small data-tooltip='83%'><b>5</b> steps passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='16%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -334,7 +255,7 @@ Session ID: 8526134503ec299795b68541d47d1eba
 </div></div>
 <script>
 var timeline = {
-"feature file":6.331
+"verify the email":21.947
 };
 </script>
 <div class="row">
@@ -354,10 +275,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 1,
+passGrandChild: 5,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
