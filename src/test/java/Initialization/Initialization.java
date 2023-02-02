@@ -4,10 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import PageObjects.AddressPage;
 import PageObjects.ApparelPage;
 import PageObjects.BookReviewPage;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.HomePage;
+import Steps.com.AddressSteps;
 
 
 
@@ -19,6 +21,7 @@ public class Initialization {
 	private static HomePage homePage;
 	private static DigitalDownloadsPage digitalPage;
 	private static BookReviewPage bookReviewPage;
+	private static AddressPage addressPage;
 	public static Initialization allObj;
     
 
@@ -53,6 +56,15 @@ public BookReviewPage getBookReviewPage() {
 		return bookReviewPage;
 
 	}
+
+public  AddressPage addressPage() {
+	
+	addressPage=PageFactory.initElements(driver, AddressPage.class);
+	return addressPage;
+
+}
+
+	
 	
 	
 	
