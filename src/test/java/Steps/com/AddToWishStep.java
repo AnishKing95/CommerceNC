@@ -1,9 +1,16 @@
 package Steps.com;
 
-public class AddToWishStep {
+import Initialization.Initialization;
+
+public class AddToWishStep extends Initialization {
+	 
+	
+	
+	
+	}
 	
 	
 	
 	
 
-}
+

@@ -9,7 +9,7 @@ import PageObjects.ApparelPage;
 import PageObjects.BookReviewPage;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.HomePage;
-import Steps.com.AddressSteps;
+import PageObjects.NoteBookPage;
 
 
 
@@ -22,6 +22,7 @@ public class Initialization {
 	private static DigitalDownloadsPage digitalPage;
 	private static BookReviewPage bookReviewPage;
 	private static AddressPage addressPage;
+	private static NoteBookPage noteBookPage;
 	public static Initialization allObj;
     
 
@@ -61,6 +62,13 @@ public  AddressPage addressPage() {
 	
 	addressPage=PageFactory.initElements(driver, AddressPage.class);
 	return addressPage;
+
+}
+
+public  NoteBookPage noteBookPage() {
+	
+	noteBookPage=PageFactory.initElements(driver, NoteBookPage.class);
+	return noteBookPage;
 
 }
 
