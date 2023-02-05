@@ -5,18 +5,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import PageObjects.AddressPage;
+import PageObjects.AddToCartPage;
 import PageObjects.ApparelPage;
 import PageObjects.BookReviewPage;
+import PageObjects.ComputerPage;
 import PageObjects.DigitalDownloadsPage;
+import PageObjects.ElectronicPage;
 import PageObjects.HomePage;
 import PageObjects.NoteBookPage;
+import PageObjects.JwelryPageFinal;
+
+import PageObjects.EmailPage;
+import PageObjects.NewsPage;
+import PageObjects.NewsletterPage;
+
 
 
 
 
 public class Initialization {
-	
-	public static WebDriver driver=new ChromeDriver();
+
+	public static WebDriver driver = new ChromeDriver();
 	private static ApparelPage apparelPage;
 	private static HomePage homePage;
 	private static DigitalDownloadsPage digitalPage;
@@ -25,31 +34,43 @@ public class Initialization {
 	private static NoteBookPage noteBookPage;
 	public static Initialization allObj;
     
+	private static AddToCartPage addToCartPage;
+	private static JwelryPageFinal jwelryPageFinal;
+	private static ElectronicPage electronicPage;
 
+	private static EmailPage emailPage;
+	private static ComputerPage computerPage;
+	private static NewsPage newsPage;
+	private static NewsletterPage newsletterPage;
 	
-	
-	
-	public  ApparelPage getApperalPage() {
-				
-		apparelPage=PageFactory.initElements(driver, ApparelPage.class);
+
+	public ApparelPage getApperalPage() {
+
+		apparelPage = PageFactory.initElements(driver, ApparelPage.class);
 		return apparelPage;
 
 	}
-	
-	public  HomePage getHomePage() {
-		
-		homePage=PageFactory.initElements(driver, HomePage.class);
+
+	public HomePage getHomePage() {
+
+		homePage = PageFactory.initElements(driver, HomePage.class);
 		return homePage;
 
 	}
-	
+
 	public DigitalDownloadsPage getDigitalDownloadPage() {
-		
-		digitalPage=PageFactory.initElements(driver, DigitalDownloadsPage.class);
+
+		digitalPage = PageFactory.initElements(driver, DigitalDownloadsPage.class);
 		return digitalPage;
 
 	}
 	
+
+	public  EmailPage getEmailPage() {
+		emailPage=PageFactory.initElements(driver, EmailPage.class);
+		return emailPage;
+	}
+
 	
 public BookReviewPage getBookReviewPage() {
 		
@@ -73,22 +94,59 @@ public  NoteBookPage noteBookPage() {
 }
 
 	
+public ComputerPage getComputerPage() {
 	
+	computerPage=PageFactory.initElements(driver, ComputerPage.class);
+	return computerPage;
+
+}
+
+public NewsPage getNewsPage() {
 	
+	newsPage=PageFactory.initElements(driver, NewsPage.class);
+	return newsPage;
+
+}
 	
-	public static void getAllObjects() {
+public NewsletterPage getNewsletterPage() {
+	
+	newsletterPage=PageFactory.initElements(driver, NewsletterPage.class);
+	return newsletterPage;
+
+}
+
+	
+	public AddToCartPage getAddToCartPage() {
 		
-		allObj = new Initialization();
+		addToCartPage = PageFactory.initElements(driver, AddToCartPage.class);
+		return addToCartPage; 
 		
+	}
+
+
+	
+	
+	
+	public JwelryPageFinal getJwelryPageFinal() {
+		
+		jwelryPageFinal = PageFactory.initElements(driver, JwelryPageFinal.class);
+		return jwelryPageFinal;
+	}
+
+	
+	
+
+	public ElectronicPage getElectronicPage() {
+
+		electronicPage = PageFactory.initElements(driver, ElectronicPage.class);
+		return electronicPage;
 
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	public static void getAllObjects() {
+
+		allObj = new Initialization();
+
+	}
+
 }

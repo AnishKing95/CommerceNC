@@ -8,7 +8,9 @@ import io.cucumber.java.en.*;
 
 public class HomePageSteps extends Initialization {
 
-	@Given("user can able enter into home page")
+
+	
+	@Given("user can able to enter into home page")
 	public void user_can_able_enter_into_home_page() {
 
 		if (FileConfig.property.getProperty("Browser").equals("chrome")) {
