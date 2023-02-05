@@ -10,6 +10,7 @@ import PageObjects.ComputerPage;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.EmailPage;
 import PageObjects.HomePage;
+import PageObjects.NewsPage;
 
 
 
@@ -23,7 +24,8 @@ public class Initialization {
 	private static EmailPage emailPage;
 	private static BookReviewPage bookReviewPage;
 	private static ComputerPage computerPage;
-
+	private static NewsPage newsPage;
+	
 	public static Initialization allObj;
     
 
@@ -69,6 +71,13 @@ public ComputerPage getComputerPage() {
 	
 	computerPage=PageFactory.initElements(driver, ComputerPage.class);
 	return computerPage;
+
+}
+
+public NewsPage getNewsPage() {
+	
+	newsPage=PageFactory.initElements(driver, NewsPage.class);
+	return newsPage;
 
 }
 	
