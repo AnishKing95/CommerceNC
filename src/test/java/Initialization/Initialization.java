@@ -6,10 +6,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import PageObjects.AddToCartPage;
 import PageObjects.ApparelPage;
+import PageObjects.BookReviewPage;
+import PageObjects.ComputerPage;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.ElectronicPage;
 import PageObjects.HomePage;
 import PageObjects.JwelryPageFinal;
+
+import PageObjects.EmailPage;
+import PageObjects.NewsPage;
+
+
+
+
 
 public class Initialization {
 
@@ -20,6 +29,12 @@ public class Initialization {
 	private static AddToCartPage addToCartPage;
 	private static JwelryPageFinal jwelryPageFinal;
 	private static ElectronicPage electronicPage;
+
+	private static EmailPage emailPage;
+	private static BookReviewPage bookReviewPage;
+	private static ComputerPage computerPage;
+	private static NewsPage newsPage;
+	
 	public static Initialization allObj;
 
 	public ApparelPage getApperalPage() {
@@ -43,13 +58,45 @@ public class Initialization {
 
 	}
 	
+
+	public  EmailPage getEmailPage() {
+		emailPage=PageFactory.initElements(driver, EmailPage.class);
+		return emailPage;
+	}
+
 	
-	public AddToCartPage getAddToCartPage() {
+public BookReviewPage getBookReviewPage() {
+		
+		bookReviewPage=PageFactory.initElements(driver, BookReviewPage.class);
+		return bookReviewPage;
+
+	}
+
+public ComputerPage getComputerPage() {
+	
+	computerPage=PageFactory.initElements(driver, ComputerPage.class);
+	return computerPage;
+
+}
+
+public NewsPage getNewsPage() {
+	
+	newsPage=PageFactory.initElements(driver, NewsPage.class);
+	return newsPage;
+
+}
+	
+
+	
+	public static void getAllObjects() {
 		
 		addToCartPage = PageFactory.initElements(driver, AddToCartPage.class);
 		return addToCartPage; 
 		
 	}
+
+
+	
 	
 	
 	public JwelryPageFinal getJwelryPageFinal() {
