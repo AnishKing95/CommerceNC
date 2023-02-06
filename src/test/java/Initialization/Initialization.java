@@ -11,6 +11,7 @@ import PageObjects.DigitalDownloadsPage;
 import PageObjects.EmailPage;
 import PageObjects.HomePage;
 import PageObjects.NewsPage;
+import PageObjects.NewsletterPage;
 
 
 
@@ -25,6 +26,7 @@ public class Initialization {
 	private static BookReviewPage bookReviewPage;
 	private static ComputerPage computerPage;
 	private static NewsPage newsPage;
+	private static NewsletterPage newsletterPage;
 	
 	public static Initialization allObj;
     
@@ -81,6 +83,12 @@ public NewsPage getNewsPage() {
 
 }
 	
+public NewsletterPage getNewsletterPage() {
+	
+	newsletterPage=PageFactory.initElements(driver, NewsletterPage.class);
+	return newsletterPage;
+
+}
 
 	
 	public static void getAllObjects() {
