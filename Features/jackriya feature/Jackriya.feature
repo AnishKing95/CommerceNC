@@ -22,3 +22,9 @@ Feature: verify some functionality in nope commerce
     When user navigates to view news archive page and click details
     And user write titile comment and click new comment
     Then news comment is successfully added
+
+  Scenario: verify "Thank you for signing up! A verification email has been sent. We appreciate your interest." message in Newsletter when subscribe a email in any page .
+    Given user can able to enter into home page
+    And user can login with valid credentials
+    When user navigates to newsletter section and entrer email id
+    Then user verify the message
