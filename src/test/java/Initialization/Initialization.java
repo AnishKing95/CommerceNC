@@ -88,7 +88,7 @@ public NewsPage getNewsPage() {
 	
 
 	
-	public static void getAllObjects() {
+	public AddToCartPage getAddToCartPage() {
 		
 		addToCartPage = PageFactory.initElements(driver, AddToCartPage.class);
 		return addToCartPage; 
