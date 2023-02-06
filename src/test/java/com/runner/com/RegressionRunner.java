@@ -13,12 +13,14 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = { "Features" }, 
+		features = { "Features\\karthick feature\\karthick.feature" }, 
 		glue = { "Steps.com" }, 
 		plugin = {
               "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
 		monochrome = true, 
+		tags= ("@regression"),
 		publish = true
+		
 
 )
 
