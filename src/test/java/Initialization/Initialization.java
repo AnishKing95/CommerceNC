@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import PageObjects.AddressPage;
 import PageObjects.AddToCartPage;
 import PageObjects.ApparelPage;
 import PageObjects.BookReviewPage;
@@ -11,6 +12,7 @@ import PageObjects.ComputerPage;
 import PageObjects.DigitalDownloadsPage;
 import PageObjects.ElectronicPage;
 import PageObjects.HomePage;
+import PageObjects.NoteBookPage;
 import PageObjects.JwelryPageFinal;
 
 import PageObjects.EmailPage;
@@ -27,17 +29,20 @@ public class Initialization {
 	private static ApparelPage apparelPage;
 	private static HomePage homePage;
 	private static DigitalDownloadsPage digitalPage;
+	private static BookReviewPage bookReviewPage;
+	private static AddressPage addressPage;
+	private static NoteBookPage noteBookPage;
+	public static Initialization allObj;
+    
 	private static AddToCartPage addToCartPage;
 	private static JwelryPageFinal jwelryPageFinal;
 	private static ElectronicPage electronicPage;
 
 	private static EmailPage emailPage;
-	private static BookReviewPage bookReviewPage;
 	private static ComputerPage computerPage;
 	private static NewsPage newsPage;
 	private static NewsletterPage newsletterPage;
 	
-	public static Initialization allObj;
 
 	public ApparelPage getApperalPage() {
 
@@ -74,6 +79,21 @@ public BookReviewPage getBookReviewPage() {
 
 	}
 
+public  AddressPage addressPage() {
+	
+	addressPage=PageFactory.initElements(driver, AddressPage.class);
+	return addressPage;
+
+}
+
+public  NoteBookPage noteBookPage() {
+	
+	noteBookPage=PageFactory.initElements(driver, NoteBookPage.class);
+	return noteBookPage;
+
+}
+
+	
 public ComputerPage getComputerPage() {
 	
 	computerPage=PageFactory.initElements(driver, ComputerPage.class);
