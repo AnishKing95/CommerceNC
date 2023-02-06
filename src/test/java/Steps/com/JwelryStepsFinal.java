@@ -1,5 +1,7 @@
 package Steps.com;
 
+import java.sql.Date;
+
 import Initialization.Initialization;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -25,6 +27,8 @@ public class JwelryStepsFinal extends Initialization {
 	public void user_select_start_date_end_date_and_click_rent() throws InterruptedException {
 		
 		Thread.sleep(3000);
+		
+		
 		
 		allObj.getJwelryPageFinal().getStdate().sendKeys("2/3/2023");
 		
