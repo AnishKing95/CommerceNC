@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddToWishPage {
 
-	@FindBy(xpath = "(//a[text()='Books '])[1]")
+	@FindBy(xpath = "(//a[text()='Books '])[3]")
 	private WebElement Books;
 
 	@FindBy(xpath = "(//img[@alt='Picture of Pride and Prejudice'])[2]")

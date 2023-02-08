@@ -21,7 +21,7 @@ public class runner extends Initialization {
 
 	@BeforeClass
 	public static void setup() {
-
+		
 		FileConfig.fileReader();
 		Initialization.getAllObjects();
 
