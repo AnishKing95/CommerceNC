@@ -17,6 +17,8 @@ public class AddressSteps extends Initialization {
 	public void users_add_new_click() {
 		allObj.addressPage().getAddNew().click();
 
+		
+		
 	}
 
 	@When("users Add new address page")
