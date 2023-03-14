@@ -26,5 +26,14 @@ public class ElectronicSteps extends Initialization {
 		allObj.getElectronicPage().getSortby().isDisplayed();
 
 	}
+	
+	@When("user navigates to electronics page and click cellphone window")
+	public void user_navigates_to_electronics_page_and_click_cellphone_window() {
+		allObj.getElectronicPage().getElectronics().click();
+		
+		allObj.getElectronicPage().getCellphone().click();
+		
+		allObj.getElectronicPage().getMobile().click();
+	}
 
 }

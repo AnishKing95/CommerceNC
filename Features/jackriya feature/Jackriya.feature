@@ -28,3 +28,28 @@ Feature: verify some functionality in nope commerce
     And user can login with valid credentials
     When user navigates to newsletter section and entrer email id
     Then user verify the message
+
+  Scenario: verify cellphones product is ordered under electronics section
+    Given user can able to enter into home page
+    And user can login with valid credentials
+    When user navigates to electronics page and click cellphone window
+    And user click add to cart
+    And user checkout the product
+    Then product is ordered
+
+  Scenario: verify accessories product is ordered under apparel section
+    Given user can able to enter into home page
+    And user can login with valid credentials
+    When user navigates to accessories page and click apparel window
+    And user click add to cart
+    And user select size
+    And user checkout the product
+    Then product is ordered
+    
+     Scenario:verify sotware product is ordered under computer section
+    Given user can able to enter into home page
+    And user can login with valid credentials
+    When user navigates to computer page and click software window
+    And user click add to cart
+    And user checkout the product
+    Then product is ordered

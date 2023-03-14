@@ -7,6 +7,16 @@ public class ApparelPage {
 	
 	
 	
+	public WebElement getAccesories() {
+		return accesories;
+	}
+
+
+	public void setAccesories(WebElement accesories) {
+		this.accesories = accesories;
+	}
+
+
 	@FindBy(xpath="(//a[text()='Apparel '])[1]")
 	private WebElement apparel;
 	
@@ -17,6 +27,22 @@ public class ApparelPage {
 	@FindBy(xpath="//a[contains(text(),' Shoes ')]")
 	private WebElement shoes;
 	
+	@FindBy(xpath="//a[text()=' Accessories ']")
+	private WebElement accesories;
+	
+	@FindBy(id="product_attribute_13")
+	private WebElement size;
+	
+	public WebElement getSize() {
+		return size;
+	}
+
+
+	public void setSize(WebElement size) {
+		this.size = size;
+	}
+
+
 	public WebElement getShoesSelected() {
 		return shoesSelected;
 	}

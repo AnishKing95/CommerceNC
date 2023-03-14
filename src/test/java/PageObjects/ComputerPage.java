@@ -13,7 +13,7 @@ public class ComputerPage {
 
 	@FindBy(xpath = "(//button[text()='Add to cart'])[1]")
 	private WebElement addToCart;
-
+	
 	@FindBy(id = "product_attribute_2")
 	private WebElement ram;
 
@@ -22,6 +22,28 @@ public class ComputerPage {
 
 	@FindBy(xpath = "//button[text()='Add to cart']")
 	private WebElement addToCart1;
+	
+	@FindBy(xpath = "//a[text()='Windows 8 Pro']")
+	private WebElement window8;
+
+	public WebElement getWindow8() {
+		return window8;
+	}
+
+	public void setWindow8(WebElement window8) {
+		this.window8 = window8;
+	}
+
+	@FindBy(xpath = "//a[text()=' Software ']")
+	private WebElement software;
+	
+	public WebElement getSoftware() {
+		return software;
+	}
+
+	public void setSoftware(WebElement software) {
+		this.software = software;
+	}
 
 	@FindBy(xpath = "//span[text()='Home']")
 	private WebElement home;

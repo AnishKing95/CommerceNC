@@ -1,5 +1,7 @@
 package Steps.com;
 
+import java.time.Duration;
+
 import org.openqa.selenium.*;
 
 import Initialization.Initialization;
@@ -21,6 +23,8 @@ public class HomePageSteps extends Initialization {
 
 		driver.get(FileConfig.property.getProperty("appUrl"));
 		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
 
 	}
 

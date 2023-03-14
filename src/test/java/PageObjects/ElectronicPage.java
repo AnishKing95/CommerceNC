@@ -14,6 +14,17 @@ private WebElement cellphone;
 @FindBy(id="products-orderby")
 private WebElement sortby;
 
+@FindBy(xpath="(//a[text()='HTC One M8 Android L 5.0 Lollipop'])[1]")
+private WebElement mobile;
+
+public WebElement getMobile() {
+	return mobile;
+}
+
+public void setMobile(WebElement mobile) {
+	this.mobile = mobile;
+}
+
 public WebElement getElectronics() {
 	return electronics;
 }

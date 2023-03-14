@@ -40,6 +40,7 @@ public class ComputerSteps extends Initialization {
 
 	@When("user checkout the product")
 	public void user_checkout_the_product() throws InterruptedException {
+		Thread.sleep(2000);
 		allObj.getComputerPage().getHome().click();
 
 		allObj.getComputerPage().getShowCart().click();
@@ -86,4 +87,11 @@ public class ComputerSteps extends Initialization {
 		allObj.getComputerPage().getSuccess().isDisplayed();
 	}
 
+	@When("user navigates to computer page and click software window")
+	public void user_navigates_to_computer_page_and_click_software_window() {
+		allObj.getComputerPage().getComputer().click();
+		allObj.getComputerPage().getSoftware().click();
+		allObj.getComputerPage().getWindow8().click();
+		
+	}
 }
